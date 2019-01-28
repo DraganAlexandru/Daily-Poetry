@@ -1,37 +1,18 @@
-## Welcome to GitHub Pages
+## Daily poems based on feelings
 
-You can use the [editor on GitHub](https://github.com/DraganAlexandru/poetry/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+We are pleased to announce you that we are preparing you a big **surprise**.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Our team is working on a mobile application that we'll send you poems on a daily bases based on your feelings.
 
-### Markdown
+Every day we will send you a poem based on your current state, to help find your inner peace, be calm and nice and in hope you will have the best day of your life. This way we will promote unknown authors, letting their work do the talking, but also sharing famous poems that delighted hour childhood, as a form of respect. 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## **Why reading poetry is good for you?**
 
-```markdown
-Syntax highlighted code block
+Life moves fast, and so do we: answering emails on the train, ordering shopping from the bath or arranging the next social engagement while our companion’s at the bar. Take time out to read a poem, though, and the verse will slow you down naturally. You need to chew the words of a poem over to really make sense of it – skim reading just won’t do. Read the words aloud if you’re alone (or even if you’re not!) and enjoy the feeling of absorbing something that takes a little time to nourish you.
 
-# Header 1
-## Header 2
-### Header 3
+The internet is stuffed with poetry but a lot of the enthusiastic sharers of it make basic errors in transcribing it. A moved word or a missing punctuation mark can hugely change the rhythm or even the meaning, and mar your enjoyment. Reach for a beautiful book instead, safe in the knowledge that the verse hasn’t been mangled on its way to you, and you’re enjoying a holiday from screen time too. 
 
-- Bulleted
-- List
+Poetry isn’t just for leaning on during hard times. It’s a thrill to read a poem that encapsulates – more elegantly than we ever could – how it feels to be deliriously happy, or perfectly tranquil, or deeply in love. It’s one of the reasons that sharing poetry is so popular at weddings.
 
-1. Numbered
-2. List
+When I find I’m really about to lose my temper, counting to ten is good – but reciting a silly poem is better (out loud, it has the added benefit of getting the attention of tantrum-throwing children, but in your head is probably better for the platform when your train is delayed.) The poems from Lewis Carroll’s Alice in Wonderland are my go-to for these times. It’s impossible to grit your teeth while mentally running through ‘You are old, Father William’s perky stanzas.
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/DraganAlexandru/poetry/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
