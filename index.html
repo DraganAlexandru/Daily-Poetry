@@ -1,5 +1,4 @@
 <html lang="en">
-
 <head>
     <title>Daily Poetry</title>
     <meta charset="utf-8">
@@ -10,30 +9,31 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <style>
+</head>
+<style>
     * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
-    
+
     body {
-        /* padding: 1rem; */
         font-size: 15px;
-        color: #777!important;
-        font: 400 15px Lato, sans-serif!important;
+        color: #777 !important;
+        font: 400 15px Lato, sans-serif !important;
         line-height: 1.8;
+        overflow-x: unset;
     }
-    
+
     /* NAVIGATION */
+	
     .navbar {
         padding-right: 15px;
         padding-left: 15px;
         margin-right: auto;
         margin-left: auto;
         background-image: linear-gradient(to right, #4567AD, #083da8);
-    
-    
+
         margin-bottom: 0;
         z-index: 9999;
         border: 0;
@@ -42,113 +42,108 @@
         letter-spacing: 4px;
         border-radius: 0;
         font-family: Montserrat, sans-serif;
-      }
-      .navbar li a, .navbar .navbar-brand {
+    }
+
+    .navbar li a,
+    .navbar .navbar-brand {
         color: #fff !important;
-      }
-      .navbar-nav li a:hover, .navbar-nav li.active a {
+    }
+
+    .navbar-nav li a:hover,
+    .navbar-nav li.active a {
         color: #4267b2 !important;
         background-color: #fff !important;
     }
-      .navbar-default .navbar-toggle {
-        border-color: transparent;
-        color: #fff !important;
-      }
-    
-      .navbar-toggle {
-        position: relative;
-        float: right;
-        padding: 9px 10px;
-        margin-right: 15px;
-        margin-top: 8px;
-        margin-bottom: 8px;
-        background-color: transparent;
-        background-image: none;
-        border: 1px solid transparent;
-        border-radius: 4px;
-    }
-    
+
     .navbar-default .navbar-toggle {
         border-color: transparent;
         color: #fff !important;
     }
-       .icon-bar {
+
+    .navbar-default .navbar-toggle {
+        border-color: transparent;
+        color: #fff !important;
+    }
+
+    .icon-bar {
         background-color: white;
     }
-    
+
     .navbar-toggle .icon-bar {
         display: block;
         width: 22px;
         height: 2px;
         border-radius: 1px;
     }
-    
-    .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+
+    .navbar-default .navbar-toggle:focus,
+    .navbar-default .navbar-toggle:hover {
         background-color: #ffff;
     }
-    
-      /* HEADER */
+
+    .container-fluid.container-custom {
+        overflow-x: hidden;
+        width: 100%;
+        padding: 0 0;
+    }
+
+    /* HEADER */
+	
     .header__text-box {
         display: flex;
         justify-content: center;
         align-items: center;
-    
+
         height: 95vh;
         background-color: #4567AD;
         color: #fff;
         padding: 100px 25px;
         font-family: Montserrat, sans-serif;
-        background-image: linear-gradient(
-            to right bottom,
-             rgba(69, 104, 173, 0.8), 
-             rgba(8, 61, 168, 0.8)), 
-        url(./img/4.jpg);
+        background-image: linear-gradient(to right bottom,
+            rgba(69, 104, 173, 0.5),
+            rgba(8, 61, 168, 0.5)),
+            url(./img/4.jpg);
         background-size: cover;
         background-position: bottom;
         position: relative;
     }
-    
-    .heading-primary--main{
+
+    .heading-primary--main {
         font-size: 61px;
         animation: moveInLeft 1s ease-out;
     }
-    
+
     .col-xs-12 .heading-primary--sub {
         margin-bottom: 15px;
         font-size: 21px;
         font-weight: 200;
         animation: moveInRight 1s ease-out;
     }
-    
-    
+
     /* ABOUT US */
-    
-    
-    .section-about{
+
+    .section-about {
         background-color: #f7f7f7;
         padding: 60px 50px;
     }
-    
-    
+
     /* SERVICES */
-    .section-services{
-    
-    }
-    
-    .wrapper-services{
-        background-image: linear-gradient(
-            to right bottom,
-             rgba(69, 104, 173, 0.8), 
-             rgba(8, 61, 168, 0.8)), 
-        url(./img/tea-time.jpg);
+	
+    .section-services {}
+
+    .wrapper-services {
+        background-image: linear-gradient(to right bottom,
+            rgba(69, 104, 173, 0.7),
+            rgba(8, 61, 168, 0.7)),
+            url(./img/tea-time.jpg);
         background-size: cover;
         background-position: center;
         position: relative;
-    
+
         padding: 50px;
     }
-    
-    .feature-box{
+
+    .feature-box {
         margin: 0 auto;
         background-color: rgba(255, 255, 255, 0.8);
         font-size: 1.5rem;
@@ -156,28 +151,26 @@
         text-align: center;
         box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
         transition: transform .3s;
-    
         padding: 1rem;
         width: 239px;
         height: 20vh;
         border-radius: 2.5rem;
-    
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-    
-    .feature-box:hover{
+
+    .feature-box:hover {
         transform: translateY(-1.5rem) scale(1.03);
     }
-    
+
     .logo-small {
         color: #4267b2;
         font-size: 50px;
     }
-    
-    .glyphicon{
+
+    .glyphicon {
         position: relative;
         top: 1px;
         display: inline-block;
@@ -187,26 +180,19 @@
         line-height: 1;
         -webkit-font-smoothing: antialiased;
     }
-    
-    
+
     /* Section form */
-    .section-form{
+	
+    .section-form {
         background-color: #f6f6f6;
         padding: 60px 50px;
     }
-    
-    .book {
-        background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(./img/address-book.jpg);
-        background-size: 100%;
-        border-radius: 3px;
-        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
-    }
-    
-    .validate{
+
+    .validate {
         padding: 5rem;
     }
-    
-    .form__input{
+
+    .form__input {
         font-size: 1.5rem;
         font-family: inherit;
         color: inherit;
@@ -219,11 +205,10 @@
         display: block;
         transition: all .3s;
     }
-    
-    .btn--blue{
+
+    .btn--blue {
         background-color: #005b9b;
         color: #fff;
-    
         text-transform: uppercase;
         text-decoration: none;
         padding: 1.5rem 4rem;
@@ -235,13 +220,13 @@
         border: none;
         cursor: pointer;
     }
-    
-    .btn--blue:hover{
+
+    .btn--blue:hover {
         transform: translateY(-3px);
         box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
     }
-    
-    .btn--blue::after{
+
+    .btn--blue::after {
         content: "";
         display: inline-block;
         height: 100%;
@@ -252,20 +237,19 @@
         left: 0;
         z-index: -1;
         transition: all .4s;
-    
         background-color: #005b9b;
     }
-    
-    .btn--blue:hover::after{
+
+    .btn--blue:hover::after {
         transform: scaleX(1.4) scaleY(1.6);
         opacity: 0;
     }
-    
-    .mce_inline_error{
+
+    .mce_inline_error {
         display: inline-block;
         margin: 2px 0 1em 0;
         padding: 5px 10px;
-        background-color: rgba(255,255,255,0.85);
+        background-color: rgba(255, 255, 255, 0.85);
         -webkit-border-radius: 3px;
         -moz-border-radius: 3px;
         border-radius: 3px;
@@ -274,25 +258,24 @@
         z-index: 1;
         color: #e85c41;
     }
-    
-    
-    
+
     /* Typography */
-    .u-margin-bottom-big{
+	
+    .u-margin-bottom-big {
         margin-bottom: 6rem;
     }
-    
+
     .u-margin-bottom-small {
         margin-bottom: 1.5rem;
     }
-    
-    .heading-tertiary{
+
+    .heading-tertiary {
         font-size: 1.6rem;
         font-weight: 700;
         text-transform: uppercase;
     }
-    
-    .heading-secondary{
+
+    .heading-secondary {
         font-size: 3.5rem;
         text-transform: uppercase;
         font-weight: 700;
@@ -303,391 +286,454 @@
         letter-spacing: .2rem;
         transition: all .2s;
     }
-    
-    .heading-secondary:hover{
-            transform: skewY(2deg) skewX(15deg) scale(1.1);
-            text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+
+    .heading-secondary:hover {
+        transform: skewY(2deg) skewX(15deg) scale(1.1);
+        text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
     }
-    
-    .section-services>.wrapper-services>.text-center>h2{
+
+    .section-services>.wrapper-services>.text-center>h2 {
         color: white;
     }
-    
+
     /* Utilities */
-    .p-b-3{
+	
+    .p-b-3 {
         padding-bottom: 3%;
     }
-    
-    .col-xs-12 h2{
+
+    .col-xs-12 h2 {
         font-size: 24px;
         text-transform: uppercase;
         color: 083da8;
         font-weight: 600;
         margin-bottom: 30px;
     }
-    
-    .col-xs-12 h2:hover{
+
+    .col-xs-12 h2:hover {
         transform: skewY(2deg) skewX(15deg) scale(1.1);
     }
-    
-    .col-xs-12 h4{
+
+    .col-xs-12 h4 {
         font-size: 19px;
         line-height: 1.375em;
         color: #303030;
         font-weight: 400;
     }
-    
-    p{
+
+    p {
         line-height: 1.8;
     }
+
+    .wrapper-positioned {
+        position: absolute;
+        bottom: 20rem;
+        left: 0;
+    }
+
     /* Animations */
-    
+
     @keyframes moveInLeft {
         0% {
             opacity: 0;
             transform: translateX(-10rem);
         }
-    
+
         80% {
             transform: translateX(1rem);
         }
-    
+
         100% {
             opacity: 1;
             transform: translate(0);
         }
     }
-    
+
     @keyframes moveInRight {
         0% {
             opacity: 0;
             transform: translateX(10rem);
         }
-    
+
         80% {
             transform: translateX(-1rem);
         }
-    
+
         100% {
             opacity: 1;
             transform: translate(0);
         }
     }
-    
-    
+
+
     /* Responsive */
-    
-    @media only screen and (max-width: 75em){
-        html {
-            font-size: 56.25%;
+
+    @media only screen and (max-width: 1200px) {
+        .col-xs-12>.heading-primary--main {
+            font-size: 51px;
+        }
+
+        .col-xs-12 .heading-primary--sub {
+            font-size: 25px;
         }
     }
-    
-    @media only screen and (max-width: 800px){
-       .u-margin-bottom-big>.row>.col-xs-4{
+
+    @media (max-width:988px) and (min-width:900px) {
+        .col-xs-12>.heading-primary--main {
+            font-size: 45px;
+        }
+
+        .col-xs-12 .heading-primary--sub {
+            font-size: 21px;
+        }
+    }
+
+    @media only screen and (max-width: 900px) {
+        .col-xs-12>.heading-primary--main {
+            font-size: 41px;
+        }
+
+        .col-xs-12 .heading-primary--sub {
+            font-size: 15px;
+        }
+    }
+
+    @media (max-width:805px) and (min-width:618px) {
+        .col-xs-12>.heading-primary--main {
+            font-size: 31px;
+        }
+    }
+
+    @media only screen and (max-width: 618px) {
+        .col-xs-12>.heading-primary--main {
+            font-size: 20px;
+        }
+
+        .col-xs-12 .heading-primary--sub {
+            font-size: 10px;
+        }
+    }
+
+    @media only screen and (max-width: 419px) {
+        .header__text-box>.row>.wrapper-positioned>.col-xs-12 {
+            padding: 0px;
+        }
+    }
+
+    @media only screen and (max-width: 388px) {
+        .header__text-box {
+            position: relative;
+        }
+
+        .header__text-box>.row {
+            position: absolute;
+            bottom: 22rem;
+            left: 0;
+        }
+
+        .wrapper-positioned {
+            position: unset;
+        }
+
+        .feature-box {
+            height: 26vh;
+        }
+    }
+
+
+    @media only screen and (max-width: 800px) {
+        .u-margin-bottom-big>.row>.col-xs-4 {
             width: 100%;
             margin-bottom: 6rem;
         }
-    
-        .u-margin-bottom-big{
+
+        .u-margin-bottom-big {
             margin-bottom: 0px;
         }
-    }
-    
-    @media only screen and (max-width: 900px){
-        .book{
-            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(./img/address-book.jpg);
+
+        .u-margin-bottom-big-responsive {
+            margin-bottom: 6rem;
         }
-    
-        .col-xs-6{
-            width: 100%!important;
-        }
-        
     }
-    
-    @media only screen and (max-height: 675px){
-        .section-services{
+
+    @media only screen and (max-width: 900px) {
+        .col-xs-6 {
+            width: 100% !important;
+        }
+    }
+
+    @media only screen and (max-height: 675px) {
+        .section-services {
             display: flex;
             justify-content: center;
             align-items: center;
         }
     }
-    
-    @media only screen and (max-width: 495px){
-    .flex-container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+
+    @media only screen and (max-width: 495px) {
+        .flex-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
-    </style>
+
+    @media only screen and (max-height: 569px) {
+        .header__text-box>.row {
+            position: absolute;
+            bottom: 11rem;
+            left: 0;
+        }
+    }
+	
+	/* MAILCHIMP */ 
+	
+	#mc_embed_signup { 
+		background: #fff; 
+		clear:left; 
+		font:14px Helvetica, Arial, sans-serif; 
+	}
+	
+	#mc-embedded-subscribe-form input[type=checkbox]{
+		display: inline; 
+		width: auto;
+		margin-right: 10px;
+	}
+	
+	#mergeRow-gdpr {
+		margin-top: 20px;
+	}
+						
+	#mergeRow-gdpr fieldset label {
+		font-weight: normal;
+	}
+	
+	#mc-embedded-subscribe-form .mc_fieldset{
+		border:none;
+		min-height: 0px;
+		padding-bottom:0px;
+	}
+</style>
+
 <body id="myPage">
     <nav class="navbar navbar-fixed-top">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar"
+                aria-expanded="false">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-
             <a class="navbar-brand" href="#myPage">DAILY POETRY</a>
         </div>
-        <div class="navbar-collapse collapse in" id="myNavbar" aria-expanded="false" style="">
+        <div class="navbar-collapse collapse" id="myNavbar" aria-expanded="false" style="">
             <ul class="nav navbar-nav navbar-right">
                 <li class=""><a href="#about">ABOUT</a></li>
                 <li class=""><a href="#services">SERVICES</a></li>
-                <!--<li><a href="#portfolio">PORTFOLIO</a></li>-->
-                <!--<li><a href="#pricing">PRICING</a></li>-->
                 <li class=""><a href="#contact">CONTACT</a></li>
             </ul>
         </div>
     </nav>
+    <div class="container-fluid container-custom ">
 
-
-    <div class="header__text-box">
-        <div class="row">
-            <div class="col-xs-12">
-                <h1 class="heading-primary--main text-center">Give your feelings something to read</h1>
-            </div>
-            <div class="col-xs-12">
-                <p class="heading-primary--sub text-center">We are currently working on it. We'll send you an email
-                    when we launch.</p>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- SECTION ABOUT -->
-    <div class="section-about" id="about">
-        <div class="row">
-            <div class="col-xs-12">
-                <div class="text-center u-margin-bottom-big">
-                    <h2 class="heading-secondary">
-                        About Us
-                    </h2>
-                </div>
-            </div>
-
-            <div class="col-xs-12">
-                <h4>We are pleased to announce that we are working on an app which will send you poems on a
-                    daily bases based on your feelings. Each poem will match you current feeling and help
-                    you find your inner peace while promoting unknown authors, letting their work do the
-                    talking.</h4><br>
-                <p>Life moves fast, and so do we: answering emails on the train, ordering shopping from the
-                    bath or arranging the next social engagement while our companion's at the bar. Take time
-                    out to read a poem, though, and the verse will slow you down naturally. You need to chew
-                    the words of a poem over to really make sense of it - skim reading just won't do. Read
-                    the words aloud if you're alone (or even if you're not!) and enjoy the feeling of
-                    absorbing something that takes a little time to nourish you.</p>
-                <p>Poetry isn't just for leaning on during hard times. It's a thrill to read a poem that
-                    encapsulates - more elegantly than we ever could - how it feels to be deliriously happy,
-                    or perfectly tranquil, or deeply in love. It's one of the reasons that sharing poetry is
-                    so popular at weddings.</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- SERVICES -->
-
-    <div class="section-services slideanim slide">
-        <div id="services" class="wrapper-services text-center">
-            <div class="text-center u-margin-bottom-big">
-                <h2 class="heading-secondary">
-                    SERVICES
-                </h2>
-            </div>
-            <div class="u-margin-bottom-big">
-                <div class="row">
-                    <div class="col-xs-4">
-                        <div class="feature-box">
-                            <span class="glyphicon glyphicon-off logo-small"></span>
-                            <h4 class="heading-tertiary u-margin-bottom-small">POWER</h4>
-                            <p class="feature-box__text">Regain your inner power</p>
-                        </div>
+        <div class="header__text-box">
+            <div class="row">
+                <div class="wrapper-positioned">
+                    <div class="col-xs-12 main">
+                        <h1 class="heading-primary--main text-center">Give your feelings something to read</h1>
                     </div>
-                    <div class="col-xs-4">
-                        <div class="feature-box">
-                            <span class="glyphicon glyphicon-heart logo-small"></span>
-                            <h4 class="heading-tertiary u-margin-bottom-small">LOVE</h4>
-                            <p class="feature-box__text">...yourself</p>
-                        </div>
-                    </div>
-                    <div class="col-xs-4">
-                        <div class="feature-box">
-                            <span class="glyphicon glyphicon-list-alt logo-small"></span>
-                            <h4 class="heading-tertiary u-margin-bottom-small">Vocabulary</h4>
-                            <p class="feature-box__text">Strenghten your vocabulary</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="u-margin-bottom-big">
-                <div class="row">
-                    <div class="col-xs-4">
-                        <div class="feature-box">
-                            <span class="glyphicon glyphicon-star logo-small"></span>
-                            <h4 class="heading-tertiary u-margin-bottom-small">ART</h4>
-                            <p class="feature-box__text">Unlock the artist within</p>
-                        </div>
-                    </div>
-                    <div class="col-xs-4">
-                        <div class="feature-box">
-                            <span class="glyphicon glyphicon-plus logo-small"></span>
-                            <h4 class="heading-tertiary u-margin-bottom-small">EMPATHY</h4>
-                            <p class="feature-box__text">Connect with yourself and others</p>
-                        </div>
-                    </div>
-                    <div class="col-xs-4">
-                        <div class="feature-box">
-                            <span class="glyphicon glyphicon-volume-up logo-small"></span>
-                            <h4 class="heading-tertiary u-margin-bottom-small">SPEAKER</h4>
-                            <p class="feature-box__text">Be a better public speaker</p>
-                        </div>
+                    <div class="col-xs-12 sub">
+                        <p class="heading-primary--sub text-center">We are currently working on it. We'll send you an
+                            email
+                            when we launch.</p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="section-form" id="contact">
-        <div class="heading text-center">
+        <div class="section-about" id="about">
             <div class="row">
                 <div class="col-xs-12">
-                    <h2 class="heading-secondary">SOUNDS INTERESTING? SIGN UP FOR UPDATES.</h2>
+                    <div class="text-center u-margin-bottom-big">
+                        <h2 class="heading-secondary">
+                            About Us
+                        </h2>
+                    </div>
                 </div>
-                <p>
-                    Be the first who hear exciting news and updates from us about Daily Poetry, including the public
-                    beta. (Don't worry that's all we'll email you about).
-                </p>
+
+                <div class="col-xs-12">
+                    <h4>We are pleased to announce that we are working on an app which will send you poems on a
+                        daily bases based on your feelings. Each poem will match you current feeling and help
+                        you find your inner peace while promoting unknown authors, letting their work do the
+                        talking.</h4><br>
+                    <p>Life moves fast, and so do we: answering emails on the train, ordering shopping from the
+                        bath or arranging the next social engagement while our companion's at the bar. Take time
+                        out to read a poem, though, and the verse will slow you down naturally. You need to chew
+                        the words of a poem over to really make sense of it - skim reading just won't do. Read
+                        the words aloud if you're alone (or even if you're not!) and enjoy the feeling of
+                        absorbing something that takes a little time to nourish you.</p>
+                    <p>Poetry isn't just for leaning on during hard times. It's a thrill to read a poem that
+                        encapsulates - more elegantly than we ever could - how it feels to be deliriously happy,
+                        or perfectly tranquil, or deeply in love. It's one of the reasons that sharing poetry is
+                        so popular at weddings.</p>
+                </div>
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-xs-12">
-                <div class="book">
-                    <div class="book__form" id="mc_embed_signup">
-                        <form
-                            action="https://facebook.us20.list-manage.com/subscribe/post?u=8febec3ce8ecf9b0e7678c12b&amp;id=a662864c3b"
-                            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
-                            class="validate" target="_blank" novalidate>
-                            <div class="form-group p-b-3">
-                                <div class="row">
-                                    <div class="col-xs-6">
-                                        <input type="email" class="form-control required email mce_inline_error"
-                                            id="mce-EMAIL" aria-required="true" aria-invalid="true"
-                                            aria-describedby="emailHelp" placeholder="Email address">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-xs-6">
-                                        <div for="mce-EMAIL" class="mce_inline_error"
-                                            style="display: inline-block;">This field is required.</div>
-                                    </div>
-                                </div>
+        <div class="section-services slideanim slide">
+            <div id="services" class="wrapper-services text-center">
+                <div class="text-center u-margin-bottom-big u-margin-bottom-big-responsive">
+                    <h2 class="heading-secondary">
+                        SERVICES
+                    </h2>
+                </div>
+                <div class="u-margin-bottom-big">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <div class="feature-box">
+                                <span class="glyphicon glyphicon-off logo-small"></span>
+                                <h4 class="heading-tertiary u-margin-bottom-small">POWER</h4>
+                                <p class="feature-box__text">Regain your inner power</p>
                             </div>
-
-                            <div id="mergeRow-gdpr" class="mergeRow gdpr-mergeRow content__gdprBlock mc-field-group">
-                                <div class="content__gdpr">
-                                    <label>Marketing Permissions</label>
-                                    <p>Please select all the ways you would like to hear from us:</p>
-                                    <fieldset class="mc_fieldset gdprRequired mc-field-group form-check"
-                                        name="interestgroup_field">
-                                        <label class="checkbox subfield" for="gdpr_7715"><input type="checkbox"
-                                                id="gdpr_7715" name="gdpr[7715]" value="Y"
-                                                class="av-checkbox "><span>Email</span> </label><label
-                                            class="checkbox subfield" for="gdpr_7719"><input type="checkbox"
-                                                id="gdpr_7719" name="gdpr[7719]" value="Y"
-                                                class="av-checkbox "><span>Direct Mail</span> </label><label
-                                            class="checkbox subfield" for="gdpr_7723"><input type="checkbox"
-                                                id="gdpr_7723" name="gdpr[7723]" value="Y"
-                                                class="av-checkbox "><span>Customized Online
-                                                Advertising</span></label>
-                                    </fieldset>
-                                    <div class="u-margin-bottom-small">
-                                        <div class="row">
-                                            <div class="col-xs-6">
-                                                <span>You can unsubscribe at any time by clicking the link in the footer
-                                                    of
-                                                    our
-                                                    emails. For information about our privacy practices, please visit
-                                                    our
-                                                    website.</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="u-margin-bottom-small">
-                                    <div class="row">
-                                        <div class="col-xs-6">
-                                            <div class="content__gdprLegal">
-                                                <p>We use Mailchimp as our marketing platform. By clicking below to
-                                                    subscribe,
-                                                    you acknowledge that your information will be transferred to
-                                                    Mailchimp
-                                                    for
-                                                    processing. <br><a href="https://mailchimp.com/legal/"
-                                                        target="_blank">Learn
-                                                        more about Mailchimp's privacy practices here.</a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="feature-box">
+                                <span class="glyphicon glyphicon-heart logo-small"></span>
+                                <h4 class="heading-tertiary u-margin-bottom-small">LOVE</h4>
+                                <p class="feature-box__text">...yourself</p>
                             </div>
-                            <div class="form-group flex-container">
-                                <button type="submit" class="btn--blue">Subscribe</button>
-                                <!-- <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
-                                    class="button"> -->
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="feature-box">
+                                <span class="glyphicon glyphicon-list-alt logo-small"></span>
+                                <h4 class="heading-tertiary u-margin-bottom-small">Vocabulary</h4>
+                                <p class="feature-box__text">Strenghten your vocabulary</p>
                             </div>
-                        </form>
-                        <!-- <script type='text/javascript'
-                            src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
-                        <script
-                            type='text/javascript'>(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = 'EMAIL'; ftypes[0] = 'email'; fnames[1] = 'FNAME'; ftypes[1] = 'text'; fnames[2] = 'LNAME'; ftypes[2] = 'text'; fnames[3] = 'ADDRESS'; ftypes[3] = 'address'; fnames[4] = 'PHONE'; ftypes[4] = 'phone'; fnames[5] = 'BIRTHDAY'; ftypes[5] = 'birthday'; }(jQuery)); var $mcj = jQuery.noConflict(true);</script> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="u-margin-bottom-big">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <div class="feature-box">
+                                <span class="glyphicon glyphicon-star logo-small"></span>
+                                <h4 class="heading-tertiary u-margin-bottom-small">ART</h4>
+                                <p class="feature-box__text">Unlock the artist within</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="feature-box">
+                                <span class="glyphicon glyphicon-plus logo-small"></span>
+                                <h4 class="heading-tertiary u-margin-bottom-small">EMPATHY</h4>
+                                <p class="feature-box__text">Connect with yourself and others</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="feature-box">
+                                <span class="glyphicon glyphicon-volume-up logo-small"></span>
+                                <h4 class="heading-tertiary u-margin-bottom-small">SPEAKER</h4>
+                                <p class="feature-box__text">Be a better public speaker</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class="section-form" id="contact">
+            <div class="heading text-center">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2 class="heading-secondary">SOUNDS INTERESTING? SIGN UP FOR UPDATES.</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12">
+					<!-- Begin Mailchimp Signup Form -->
+					<div id="mc_embed_signup">
+					<form action="https://facebook.us20.list-manage.com/subscribe/post?u=8febec3ce8ecf9b0e7678c12b&amp;id=a662864c3b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+						<div id="mc_embed_signup_scroll">
+						<h3>Be the first who hear exciting news and updates from us about Daily Poetry, including the public beta. (Don't worry that's all we'll email you about).</h3>
+					<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+					<div class="mc-field-group">
+						<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+					</label>
+						<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+					</div>
+					<div id="mergeRow-gdpr" class="mergeRow gdpr-mergeRow content__gdprBlock mc-field-group">
+						<div class="content__gdpr">
+							<label>Marketing Permissions</label>
+							<p>Please select all the ways you would like to hear from us:</p>
+							<fieldset class="mc_fieldset gdprRequired mc-field-group" name="interestgroup_field">
+							<label class="checkbox subfield" for="gdpr_7715"><input type="checkbox" id="gdpr_7715" name="gdpr[7715]" value="Y" class="av-checkbox "><span>Email</span> </label><label class="checkbox subfield" for="gdpr_7719"><input type="checkbox" id="gdpr_7719" name="gdpr[7719]" value="Y" class="av-checkbox "><span>Direct Mail</span> </label><label class="checkbox subfield" for="gdpr_7723"><input type="checkbox" id="gdpr_7723" name="gdpr[7723]" value="Y" class="av-checkbox "><span>Customized Online Advertising</span> </label>
+							</fieldset>
+							<p>You can unsubscribe at any time by clicking the link in the footer of our emails. For information about our privacy practices, please visit our website.</p>
+						</div>
+						<div class="content__gdprLegal">
+							<p>We use Mailchimp as our marketing platform. By clicking below to subscribe, you acknowledge that your information will be transferred to Mailchimp for processing. <a href="https://mailchimp.com/legal/" target="_blank">Learn more about Mailchimp's privacy practices here.</a></p>
+						</div>
+					</div>
+						<div id="mce-responses" class="clear">
+							<div class="response" id="mce-error-response" style="display:none"></div>
+							<div class="response" id="mce-success-response" style="display:none"></div>
+						</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+						<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_8febec3ce8ecf9b0e7678c12b_a662864c3b" tabindex="-1" value=""></div>
+						<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+						</div>
+					</form>
+					</div>
+
+					<!--End mc_embed_signup-->
+                </div>
+            </div>
+        </div>
     </div>
-
-
     <script>
         $(document).ready(function () {
-            // Add smooth scrolling to all links in navbar + footer link
             $(".navigation__nav, .navbar a, footer a[href='#myPage']").on('click', function (event) {
-                // Make sure this.hash has a value before overriding default behavior
                 if (this.hash !== "") {
-                    // Prevent default anchor click behavior
                     event.preventDefault();
-
-                    // Store hash
                     var hash = this.hash;
-                    console.log('hash:', this.hash);
-
-                    // Using jQuery's animate() method to add smooth page scroll
-                    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
                     $('html, body').animate({
                         scrollTop: $(hash).offset().top
-                    }, 900, function () {
-
-                        // Add hash (#) to URL when done scrolling (default click behavior)
+                    }, 1000, function () {
                         window.location.hash = hash;
-                        console.log('window.location.hash:', window.location.hash);
                     });
-                } // End if
+                }
             });
 
             $(window).scroll(function () {
                 $(".slideanim").each(function () {
                     var pos = $(this).offset().top;
-
                     var winTop = $(window).scrollTop();
                     if (pos < winTop + 600) {
                         $(this).addClass("slide");
                     }
                 });
             });
-        })
+			
+			$('#mc-embedded-subscribe-form').bootstrapValidator({
+                feedbackIcons: {
+                    valid: 'glyphicon glyphicon-ok',
+                    invalid: 'glyphicon glyphicon-remove',
+                    validating: 'glyphicon glyphicon-refresh'
+                },
+                fields: {
+                    email: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Please supply your email address'
+                            },
+                            emailAddress: {
+                                message: 'Please supply a valid email address'
+                            }
+                        }
+                    },
+                }
+            });
+        });
     </script>
 </body>
-
 </html>
