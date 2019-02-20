@@ -3,7 +3,6 @@
     <title>Daily Poetry</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="razvan.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
@@ -124,7 +123,7 @@
 
     .section-about {
         background-color: #f7f7f7;
-        padding: 60px 50px;
+        padding: 40px 50px;
     }
 
     /* SERVICES */
@@ -161,9 +160,11 @@
         justify-content: center;
     }
 
+	/*
     .feature-box:hover {
         transform: translateY(-1.5rem) scale(1.03);
     }
+	*/
 
     .logo-small {
         color: #4267b2;
@@ -485,35 +486,6 @@
             left: 0;
         }
     }
-	
-	/* MAILCHIMP */ 
-	
-	#mc_embed_signup {
-      		background: #fff;
-      		clear: left;
-      		font: 14px Helvetica, Arial, sans-serif;
-    	}
-
-    	#mc-embedded-subscribe-form input[type=checkbox] {
-      		display: inline;
-      		width: auto;
-      		margin-right: 10px;
-    	}
-
-    	#mergeRow-gdpr {
-      		margin-top: 20px;
-    	}
-
-  	#mergeRow-gdpr fieldset label {
-      		font-weight: normal;
-	}
-
-    	#mc-embedded-subscribe-form .mc_fieldset {
-      		border: none;
-      		min-height: 0px;
-      		padding-bottom: 0px;
-      		padding-left: 35px;
-    	}
 </style>
 
 <body id="myPage">
@@ -642,16 +614,8 @@
         </div>
 
         <div class="section-form" id="contact">
-            <div class="heading text-center">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <h2 class="heading-secondary">SOUNDS INTERESTING? SIGN UP FOR UPDATES.</h2>
-                    </div>
-                </div>
-            </div>
-
             <div class="row">
-	    	<div class="klaviyo-form-Q9UZWM"></div>
+				<div class="klaviyo-form-Q9UZWM"></div>
             </div>
         </div>
     </div>
@@ -677,26 +641,6 @@
                         $(this).addClass("slide");
                     }
                 });
-            });
-			
-			$('#mc-embedded-subscribe-form').bootstrapValidator({
-                feedbackIcons: {
-                    valid: 'glyphicon glyphicon-ok',
-                    invalid: 'glyphicon glyphicon-remove',
-                    validating: 'glyphicon glyphicon-refresh'
-                },
-                fields: {
-                    email: {
-                        validators: {
-                            notEmpty: {
-                                message: 'Please supply your email address'
-                            },
-                            emailAddress: {
-                                message: 'Please supply a valid email address'
-                            }
-                        }
-                    },
-                }
             });
         });
     </script>
